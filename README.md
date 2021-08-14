@@ -7,7 +7,7 @@ Our initial question: what feedback or top-down control do under task demand?
 
 The neural activity in human and monkey resemble with HCNN in representational geometry. So we try to model possible feedback or top-down control mechanisms with deep neural networks. And these mechanisms may adapt to the task structure and improve the performance. So adding complexity to the task representations. Then we can compare the representations with neuroimaging data in the same tasks with RSA. And manipulate neural network and build computational model to characterize the computational mechanism of feedback or top-down control components.
 
-![image-20210814121839262](D:\Study\Projects\NMA2020_project_vision_CNN\fig\RSA)
+![image-20210814121839262](.\fig\RSA)
 
 
 
@@ -19,7 +19,7 @@ We use Kay/Gallant Dataset as a practice because this dataset is clean, avoiding
 
 We labeled the stimuli into 4 categories by hand: animate-animals, animate-human, inanimate-artificial, inanimate-natural (Khaligh-Razavi & Kriegeskorte 2014). We assume all stimuli in the same category elicit a prototypical response pattern, which implies small dissimilarities between within-category representations. Stimuli is clustered in according the their categories.
 
-![image-20210814122001985](D:\Study\Projects\NMA2020_project_vision_CNN\fig\kay_data1)
+![image-20210814122001985](.\fig\kay_data1)
 
 
 
@@ -33,7 +33,7 @@ We labeled the stimuli into 4 categories by hand: animate-animals, animate-human
 
 - The result seems plausible in V1. But there should be some clusters by categories in V4.
 
-![image-20210814125104582](D:\Study\Projects\NMA2020_project_vision_CNN\fig\result1)
+![image-20210814125104582](.\fig\result1)
 
 ### Why?
 
@@ -51,7 +51,7 @@ We labeled the stimuli into 4 categories by hand: animate-animals, animate-human
 
 - The distances within the two categories, “animate” and “inanimate”, gradually become shorter and cluster together from V1 to V4. This may imply the stimuli in the same category elicit a prototypical response pattern, which is what we expect.
 
-![image-20210814125245252](D:\Study\Projects\NMA2020_project_vision_CNN\fig\RDM_average)
+![image-20210814125245252](.\fig\RDM_average)
 
 ### Compare neural network and brain in representational level
 
@@ -72,7 +72,7 @@ We labeled the stimuli into 4 categories by hand: animate-animals, animate-human
 
 4. Compare again.
 
-![image-20210814125442515](D:\Study\Projects\NMA2020_project_vision_CNN\fig\compareNNwithfMRI)
+![image-20210814125442515](.\fig\compareNNwithfMRI)
 
 - Resnet-18 (He et al. 2016), brain-like recurrent ANNs CORnet (Kubilius et al. 2018), self-implement RCNN with biologically-plausible lateral and top-down connections (Spoerer et al. 2017), and Residual Attention Network (Wang et al. 2017).
 
@@ -81,3 +81,4 @@ We labeled the stimuli into 4 categories by hand: animate-animals, animate-human
 - **Every layers of Resnet have the exactly same RDM**, and the stimuli(1750) clustered into these 4 categories precisely. 
 
 - It seems only the first convolutional layer is working to classify stimuli.
+
